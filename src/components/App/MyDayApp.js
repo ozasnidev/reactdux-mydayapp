@@ -1,10 +1,12 @@
 //JournalApp
 import React from 'react'
 
+import { MainRouter } from '../../services/routers/MainRouter'
+
 export const MyDayApp = () => {
     return (
         <div>
-            <h1>My Day App</h1>
+            <MainRouter />
         </div>
     )
 }
