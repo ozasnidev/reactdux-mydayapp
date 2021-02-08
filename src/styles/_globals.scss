@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+*, *::after, *::before{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    margin:0px;
+    box-sizing: inherit;
+}
+body{
+    background-image: linear-gradient(to bottom, #5433ff, #20bdff, #a5fecb);
+    min-height: 100vh;
+
+    @include breakpoint-up(large){
+        background-image: linear-gradient(to right, #5433ff, #20bdff, #a5fecb);
+    }
+}
