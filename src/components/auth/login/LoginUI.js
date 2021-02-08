@@ -1,10 +1,10 @@
-//JournalApp
+//LoginScreen
 import React from 'react'
 
-export const MyDayApp = () => {
+export const LoginUI = () => {
     return (
         <div>
-            <h1>My Day App</h1>
+            <h1>Login</h1>
         </div>
     )
 }
