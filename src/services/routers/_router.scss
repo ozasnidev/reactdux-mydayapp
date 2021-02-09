@@ -1,0 +1,22 @@
+.router{
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    color: $fourth_color_font;
+    height: 100vh;
+
+    &__container{
+        border:  0.3125rem solid #fff;
+        border-radius: 1rem;
+        width: 70%;
+
+        @include breakpoint-up(medium){
+            width: 60%;
+        }
+
+        @include breakpoint-up(large){
+            width: 40%;
+        }
+        
+    }
+}

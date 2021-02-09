@@ -10,10 +10,13 @@ html{
     box-sizing: inherit;
 }
 body{
-    background-image: linear-gradient(to bottom, #5433ff, #20bdff, #a5fecb);
+    background-image: linear-gradient(to bottom, #0052d4, #4364f7, #6fb1fc);
     min-height: 100vh;
 
     @include breakpoint-up(large){
-        background-image: linear-gradient(to right, #5433ff, #20bdff, #a5fecb);
+        background-image: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc);
     }
+}
+main{
+    width: 100%;
 }

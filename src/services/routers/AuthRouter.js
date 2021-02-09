@@ -7,12 +7,14 @@ import { RegisterUI } from '../../components/auth/register/RegisterUI'
 
 export const AuthRouter = () => {
     return (
-        <div>
-            <Switch>
-                <Route exact path="/auth/login" component={ LoginUI }/>
-                <Route exact path="/auth/register" component={ RegisterUI }/>
-                <Redirect to="/auth/login" />
-            </Switch>
+        <div className="router">
+            <div className="router__container py-10">
+                <Switch>
+                    <Route exact path="/auth/login" component={ LoginUI }/>
+                    <Route exact path="/auth/register" component={ RegisterUI }/>
+                    <Redirect to="/auth/login" />
+                </Switch>
+            </div>
         </div>
     )
 }
