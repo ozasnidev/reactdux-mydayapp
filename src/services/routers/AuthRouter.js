@@ -8,7 +8,7 @@ import { RegisterUI } from '../../components/auth/register/RegisterUI'
 export const AuthRouter = () => {
     return (
         <div className="router">
-            <div className="router__container py-10">
+            <div className="router__container p-10">
                 <Switch>
                     <Route exact path="/auth/login" component={ LoginUI }/>
                     <Route exact path="/auth/register" component={ RegisterUI }/>
