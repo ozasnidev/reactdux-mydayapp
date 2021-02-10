@@ -21,47 +21,13 @@
         
     }
 
-    &__google {
+    &__alert{
+        background-color: $fourth_color;
+        border-radius: 5px;
+        color: $first_color_font;
         display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        align-items: center;
-        cursor: pointer;
-        margin-top: 5px;
-        width: 100%;
-        height: 42px;
-        background-color: transparent; 
-        border: 2px solid #fff;
-        overflow: hidden;
-        border-radius: 10px;
-        box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
-    
-        transition: box-shadow .3s ease;
-    
-        .google-icon-wrapper {
-            width: 40px;
-            height: 40px;
-            background-color: $white;
-        }
-        .google-icon {
-            position: absolute;
-            margin-top: 11px;
-            margin-left: 11px;
-            width: 18px;
-            height: 18px;
-        }
-        .btn-text {
-            flex:8;
-            text-align: center;
-            color: $white;
-            font-size: 14px;
-            letter-spacing: 0.2px;
-        }
-        &:hover {
-            box-shadow: 0 0 6px  $button-active-blue;
-        }
-        &:active {
-            background: $button-active-blue;
-        }
+        justify-content: center;
+        //añadir clase mb-10;
+        //añadir clase p-5;
     }
 }

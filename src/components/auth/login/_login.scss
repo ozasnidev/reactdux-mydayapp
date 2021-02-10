@@ -1,0 +1,39 @@
+.login{
+    &__title{
+        text-align: center;
+    }
+
+    &__input{
+        background-color: $second_color;
+        border: transparent;
+        border-radius: 50px;
+        font-size: 1.10rem;
+        outline:none;
+        text-align: center;
+        width: 100%;
+    }
+    &__google{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        @include breakpoint-up(medium){
+            margin:0px auto;
+            width: 80%;
+            margin-bottom: 1.25rem;
+        }
+        @include breakpoint-up(large){
+            margin:0px auto;
+            width: 70%;
+            margin-bottom: 1.25rem;
+        }
+    }
+    &__link{
+        font-weight: bold;
+        color: $first_color_font;
+        text-decoration: none;
+    }
+}
