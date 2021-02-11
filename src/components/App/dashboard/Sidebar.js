@@ -10,7 +10,14 @@ export const Sidebar = () => {
                 </h3>
                 <h3>Juan Garcia</h3>
             </div>
-            <button className="mx-12">Logout</button>
+            <button className="mx-12">
+                <span>Logout   </span> 
+                <FontAwesomeIcon icon={['fas', 'sign-out-alt']} />
+            </button>
+            <button>
+                <span>Create new entry   </span>
+                <FontAwesomeIcon icon={['fas', 'calendar-plus']} />
+            </button>
         </aside>
     )
 }
