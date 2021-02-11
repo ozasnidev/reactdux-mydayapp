@@ -1,0 +1,22 @@
+.dashboard{
+    &__main{
+        display: flex;
+    }
+
+    &__sidebar{
+        background-color: $third_color;
+        border:  0.3125rem solid #fff;
+        border-radius: 1rem;
+        color: $fourth_color_font;
+        height: 100%;
+        width: 30%;
+    }
+
+    &__navbar{
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+}
