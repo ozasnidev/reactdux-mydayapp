@@ -1,10 +1,12 @@
 //RegisterScreen
 import React from 'react'
+import { RegisterForm } from './RegisterForm'
 
 export const RegisterUI = () => {
     return (
-        <div>
-            <h1>Register</h1>
-        </div>
+        <>
+            <h2 className="login__title mb-10">Register</h2>
+            <RegisterForm />
+        </>
     )
 }
