@@ -1,5 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { MyDayAsideEntriesList } from './MyDayAsideEntriesList'
 
 export const Sidebar = () => {
     return (
@@ -18,6 +19,7 @@ export const Sidebar = () => {
                 <span>Create new entry   </span>
                 <FontAwesomeIcon icon={['fas', 'calendar-plus']} />
             </button>
+            <MyDayAsideEntriesList/>
         </aside>
     )
 }

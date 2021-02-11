@@ -1,6 +1,6 @@
 //JournalScreen
 import React from 'react'
-import { Sidebar } from './Sidebar'
+import { Sidebar } from '../aside/Sidebar'
 export const MyDayDashboard = () => {
     return (
         <div className="dashboard__main">
