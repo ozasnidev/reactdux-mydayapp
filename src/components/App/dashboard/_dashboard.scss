@@ -23,6 +23,8 @@
     &__entries{
         overflow-y: scroll;
         margin-top: 1.875rem;
+        scrollbar-width: thin;
+        scrollbar-color: white $third_color;
 
         &::-webkit-scrollbar {
             width: 12px;
@@ -44,6 +46,7 @@
         display: flex;
         margin-bottom: 0.625rem;
         overflow: hidden;
+        cursor: pointer;
     }
     &__entry-image{
         height: 4.6875rem;
@@ -87,5 +90,17 @@
     }
     &__year-date{
         font-size: 0.90rem;
+    }
+    &__noentry-content{
+        align-items: center;
+        color:white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        
+        h2{
+            text-align: center;
+        }
     }
 }
