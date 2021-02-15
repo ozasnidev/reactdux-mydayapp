@@ -103,4 +103,24 @@
             text-align: center;
         }
     }
+    &__entry-section-content{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    &__entry-section-appbar{
+        background-color: $third_color;
+        align-items: center;
+        border:  0.3125rem solid #fff;
+        border-radius: 1rem;
+        color:white;
+        display:flex;
+        justify-content: space-between;
+        padding: 0.625rem 1.25rem;
+    }
+    &__entry-section-appbar-buttons{
+        display: flex;
+        flex-direction: row;
+        width: 20%;
+    }
 }

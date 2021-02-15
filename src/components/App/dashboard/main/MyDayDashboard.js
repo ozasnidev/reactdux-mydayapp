@@ -1,6 +1,7 @@
 //JournalScreen
 import React from 'react'
 import { Sidebar } from '../aside/Sidebar'
+import { EntrySection } from './EntrySection'
 //import { NoEntrySelected } from './NoEntrySelected'
 export const MyDayDashboard = () => {
     return (
@@ -8,6 +9,7 @@ export const MyDayDashboard = () => {
             <Sidebar />
             <main>
                {/*  <NoEntrySelected /> */}
+               <EntrySection />
             </main>
         </div>
     )
