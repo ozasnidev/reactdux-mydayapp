@@ -123,4 +123,35 @@
         flex-direction: row;
         width: 20%;
     }
+    &__entry-section-data-content{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 20px;
+        align-items: center;
+    }
+    &__entry-section-title-input, &__entry-section-textarea{
+        width: 100%;
+        border: none;
+
+        &:focus{
+            outline: none;
+        }
+    }
+    &__entry-section-title-input{
+        color: $first_color_font;
+        font-size: 1.5625rem;
+        font-weight: 700;
+        padding-left: 10px;
+    }
+    &__entry-section-textarea{
+        color:$second_color_font;
+        font-size: 1rem;
+        flex:1 1 auto;
+        resize: none;
+    }
+    &__entry-section-image img{
+        max-height: 70vh;
+        box-shadow: 5px 5px $third_color;
+    }
 }
