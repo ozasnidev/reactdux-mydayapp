@@ -5,4 +5,4 @@ const combinedReducers = combineReducers({
     authReducer
 })
 
-export const reduxStore = createStore(combinedReducers)
+export const reduxStore = createStore(combinedReducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
