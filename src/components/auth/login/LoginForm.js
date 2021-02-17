@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useForm } from '../../../hooks/useForm';
-import { loginAction } from '../actions/authActions';
+import { loginWithEmailPassword } from '../actions/authActions';
 
 export const LoginForm = () => {
     const dispatch = useDispatch();
@@ -15,7 +15,7 @@ export const LoginForm = () => {
 
     const handleLogin = event => {
         event.preventDefault()
-        dispatch( loginAction(98765, 'Ozasnidev') )
+        dispatch(loginWithEmailPassword(email, password))
     }
 
     return (
