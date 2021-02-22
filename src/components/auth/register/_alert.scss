@@ -1,0 +1,20 @@
+.alert{
+    &__error{
+        background-color: #f34b4b;
+        border: 2px solid $second_color;
+        border-radius: 10px;
+        color: $fourth_color_font;
+        font-weight: bold;
+        text-align: center;
+    }
+    &__success{
+        background-color: #27c04e;
+        border: 2px solid $second_color;
+        border-radius: 10px;
+        color: $fourth_color_font;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+
+}
