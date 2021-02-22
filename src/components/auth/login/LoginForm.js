@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useForm } from '../../../hooks/useForm';
-import { loginWithEmailPassword } from '../actions/authActions';
+import { loginWithEmailPassword, loginWithGoogle } from '../actions/authActions';
 
 export const LoginForm = () => {
     const dispatch = useDispatch();
@@ -17,6 +17,9 @@ export const LoginForm = () => {
         event.preventDefault()
         dispatch(loginWithEmailPassword(email, password))
     }
+    const callGoogleLogin = () => {
+        dispatch(loginWithGoogle())
+    }
 
     return (
         <>
@@ -24,7 +27,7 @@ export const LoginForm = () => {
                 <input type="text" placeholder="email" name="email" className="login__input mx-3" autoComplete="off" value={email} onChange={handleInputChange}/>
                 <input type="password" placeholder="password" name="password" className="login__input mx-3" autoComplete="off" value={password} onChange={handleInputChange}/>
                 <button type="submit" className="mx-10 p-12" >Sign in</button>
-                <button className="login__google">
+                <button className="login__google" onClick={callGoogleLogin} >
                     <FontAwesomeIcon icon={['fab', 'google']} size="2x"/>
                     Sign in with Google
                 </button>
